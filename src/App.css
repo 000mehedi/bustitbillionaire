@@ -1,5 +1,6 @@
 .App {
-  height: 110vh;
+  font-family: "Montserrat";
+  height: 100vh;
   color: white;
   background-color: #020230;
   display: flex;
@@ -34,7 +35,7 @@
   font-size: 20px;
 }
 
-.question {
+.hint {
   width: 80%;
   background: linear-gradient(#100241, black);
   text-align: center;

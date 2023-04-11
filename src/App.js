@@ -10,7 +10,7 @@ function App() {
   const [name, setName] = useState(null);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [timeOut, setTimeOut] = useState(false);
-  const [earned, setEarned] = useState("₹ 0");
+  const [earned, setEarned] = useState("$ 0");
 
   useEffect(() => {
     questionNumber > 1 &&
@@ -55,20 +55,13 @@ function App() {
             <MDBListGroup className="money-list">
               <MDBRow>
                 <span className="mb-2">
-                  <MDBBtn
-                    style={{ float: "right" }}
-                    className="mx-2"
-                    color="light"
-                    onClick={() => setTimeOut(true)}
-                  >
-                    Quit
-                  </MDBBtn>
+                  
                   <MDBBtn
                     style={{ float: "right" }}
                     onClick={() => {
                       setName(null);
                       setQuestionNumber(1);
-                      setEarned("₹ 0");
+                      setEarned("$ 0");
                     }}
                   >
                     Exit

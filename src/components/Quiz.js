@@ -67,6 +67,7 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
           </div>
         ))}
       </div>
+      {/* <div className="hint">{question?.answers}</div> */}
     </div>
   );
 };

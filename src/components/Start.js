@@ -9,6 +9,8 @@ const Start = ({ setName, setTimeOut }) => {
     inputRef.current.value && setName(inputRef.current.value);
   };
   return (
+    
+
     <div
       style={{
         margin: "auto",
@@ -18,6 +20,7 @@ const Start = ({ setName, setTimeOut }) => {
         marginTop: "300px",
       }}
     >
+      
       <input
         type="text"
         placeholder="Enter Name"
