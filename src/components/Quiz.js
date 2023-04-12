@@ -34,11 +34,11 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
     //   setClassName(item.correct ? "answer correct" : "answer wrong");
     // }, 3000);
 
-    delay(3000, () => {
+    delay(1000, () => {
       setClassName(item.correct ? "answer correct" : "answer wrong");
     });
 
-    delay(5000, () => {
+    delay(1000, () => {
       if (item.correct) {
         correctAnswer();
         delay(1000, () => {
@@ -67,7 +67,7 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
           </div>
         ))}
       </div>
-      {/* <div className="hint">{question?.answers}</div> */}
+      
     </div>
   );
 };

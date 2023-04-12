@@ -131,31 +131,23 @@ const data = [
   
   {
     id: 7,
-    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
+    question: "Looks like the website is legit so she decides to call the number from there. There is a customer service person on the line, should they just believe that the account holder is Alice that is on the line?",
     answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
-        correct: false,
-      },
-      {
-        text: "Set up a short password, so it is easy to remember",
-        correct: false,
-      },
-      {
-        text: "Set up a password that makes use of letters, numbers, and special characters and easy to remember. ",
+        text: "No",
         correct: true,
       },
       {
-        text: "Using her name and birthday so she can remember the password easily.",
+        text: "Yes",
         correct: false,
-      },
+      }
     ],
   },
 
   {
     id: 8,
-    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
-    answers: [
+    question: "How can the customer service person identify Alice?",
+        answers: [
       {
         text: "Set up a unique password that is at least 10-15 characters long.",
         correct: false,
@@ -177,62 +169,54 @@ const data = [
 
   {
     id: 9,
-    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
+    question: "Should just identifying Alice be enough? Should the customer service person now grant access and control to the person on the line to their bank account?",
     answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
-        correct: false,
-      },
-      {
-        text: "Set up a short password, so it is easy to remember",
-        correct: false,
-      },
-      {
-        text: "Set up a password that makes use of letters, numbers, and special characters and easy to remember. ",
+        text: "No",
         correct: true,
       },
       {
-        text: "Using her name and birthday so she can remember the password easily.",
+        text: "Yes",
         correct: false,
-      },
+      }
     ],
   },
 
   {
     id: 10,
-    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
-    answers: [
+    question: "How can customer service on the line, authenticate that it is indeed Alice?",
+        answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
+        text: "Asking the pin for their account",
         correct: false,
       },
       {
-        text: "Set up a short password, so it is easy to remember",
+        text: "Asking their middle name",
         correct: false,
       },
       {
-        text: "Set up a password that makes use of letters, numbers, and special characters and easy to remember. ",
+        text: "Asking their birthdate, phone number and address",
+        correct: false,
+      },
+      {
+        text: "None of the above ",
         correct: true,
-      },
-      {
-        text: "Using her name and birthday so she can remember the password easily.",
-        correct: false,
       },
     ],
   },
 ];
 
 const prizeMoney = [
-  { id: 1, amount: "$ 5000" },
-  { id: 2, amount: "$ 15000" },
-  { id: 3, amount: "$ 60000" },
-  { id: 4, amount: "$ 150000" },
-  { id: 5, amount: "$ 250000" },
-  { id: 6, amount: "$ 600000" },
-  { id: 7, amount: "$ 1000000" },
-  { id: 8, amount: "$ 100000000" },
-  { id: 9, amount: "$ 500000000" },
-  { id: 10, amount: "$ 1000000000" },
+  { id: 1, amount: "$ 5 000" },
+  { id: 2, amount: "$ 15 000" },
+  { id: 3, amount: "$ 60 000" },
+  { id: 4, amount: "$ 150 000" },
+  { id: 5, amount: "$ 250 000" },
+  { id: 6, amount: "$ 600 000" },
+  { id: 7, amount: "$ 1 000 000" },
+  { id: 8, amount: "$ 100 000 000" },
+  { id: 9, amount: "$ 500 000 000" },
+  { id: 10, amount: "$ 1 000 000 000" },
 ].reverse();
 
 export { prizeMoney, data };
