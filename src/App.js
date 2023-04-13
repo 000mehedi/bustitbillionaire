@@ -61,7 +61,7 @@ function App() {
                 <span className="mb-2">
                   
                   <MDBBtn
-                    style={{ float: "right" }}
+                    style={{ float: "right", backgroundColor: "#20C20E" }}
                     onClick={() => {
                       setName(null);
                       setQuestionNumber(1);
