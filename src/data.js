@@ -5,11 +5,11 @@ const data = [
     answers: [
       {
         text: "Yes",
-        correct: true,
+        correct: false,
       },
       {
         text: "No",
-        correct: false,
+        correct: true,
       },
       
     ],
@@ -37,6 +37,7 @@ const data = [
         correct: true,
       },
     ],
+    hint:"If an attacker gains access to one of your social media accounts, they can potentially use that same password to try and gain access to your other accounts. 2FA is important because it provides an additional layer of security beyond just a password or PIN. Passwords can be easily compromised through phishing attacks, social engineering, or brute force attacks. With 2FA,  even if a password is compromised, an attacker still needs to have access to the second factor in order to gain access to an account or system.",
   },
   {
     id: 3,
@@ -61,6 +62,7 @@ const data = [
       },
       
     ],
+    hint:"Remember that two factor authentication questions cannot be easily guessable, ambiguous, public information, not memorable. If the questions are ambiguous or not memorable Alice would have a hard time logging into her account. On the other hand, if the answers are easily guessable or public information, attacker can guess the questions and easily get in.",
   },
   {
     id: 4,
@@ -83,13 +85,14 @@ const data = [
         correct: true,
       },
     ],
+    hint:"Setting up one-time passwords means that a unique password is generated every time you log in from a new device. This approach is particularly useful for preventing unauthorized access to your accounts, as even if someone has your regular password, they won't be able to log in without the one-time password.",
   },
   {
     id: 5,
     question: "Alice also needs to change her password and have a different password for all her accounts. What things Alice needs to be mindful about before setting up her passwords?",
     answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
+        text: "Set up a unique password that is at least 5-7 characters long.",
         correct: false,
       },
       {
@@ -105,28 +108,31 @@ const data = [
         correct: false,
       },
     ],
+    hint: "Laws requiring strong passwords are designed to enhance online account security and protect sensitive information from unauthorized access. Strong passwords often use a combination of uppercase and lowercase letters, numbers, and special characters to reduce the risk of account compromise and protect against data breaches.",
   },
   {
     id: 6,
-    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
+    question: "Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. Alice also wants to be cautions and decided to block her bank account so the attacker cannot get access to her bank account. She decides to call the bank, since she does not have the bank’s number, she decides to look for it online. How can Alice tell if the website she found is the actual website of the bank?",
     answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
+        text: "The website looks pretty.",
         correct: false,
       },
       {
-        text: "Set up a short password, so it is easy to remember",
+        text: "We cannot tell from the webiste alone.",
         correct: false,
       },
       {
-        text: "Set up a password that makes use of letters, numbers, and special characters and easy to remember. ",
+        text: "Check the HTTP, look for proper privacy policy, check if there are any unsoicited links, fishy contact details. ",
         correct: true,
       },
       {
-        text: "Using her name and birthday so she can remember the password easily.",
+        text: "She can trust the two reviews that says the website is authentic ",
         correct: false,
       },
     ],
+    hint:"If a website is not properly authenticated by the user (Alice), any links or information on that website may be false and pose a risk to the user's security. This can include attempts to steal the user's personal and sensitive information, which could lead to harm such as identity theft or financial fraud.",
+    
   },
   
   {
@@ -142,6 +148,7 @@ const data = [
         correct: false,
       }
     ],
+    hint:"The customer service on the line needs to verify that it is indeed Alice, if not, anyone can call as Alice and gain access to her account and control it however they please",
   },
 
   {
@@ -149,22 +156,23 @@ const data = [
     question: "How can the customer service person identify Alice?",
         answers: [
       {
-        text: "Set up a unique password that is at least 10-15 characters long.",
-        correct: false,
-      },
-      {
-        text: "Set up a short password, so it is easy to remember",
-        correct: false,
-      },
-      {
-        text: "Set up a password that makes use of letters, numbers, and special characters and easy to remember. ",
+        text: "Name, Birthdate, Address",
         correct: true,
       },
       {
-        text: "Using her name and birthday so she can remember the password easily.",
+        text: "Security questions",
+        correct: false,
+      },
+      {
+        text: "Alice’s Code",
+        correct: false,
+      },
+      {
+        text: "All of the above",
         correct: false,
       },
     ],
+    hint:"Authentication methods may vary depending on the context and purpose. While some methods require codes or security questions to verify someone's identity, other methods may rely on different factors.",
   },
 
   {
@@ -180,6 +188,7 @@ const data = [
         correct: false,
       }
     ],
+    hint:"The process of identifying typically involves providing some form of information, such as a name, username, or email address, that can be used to uniquely identify them within a system or organization. Anyone who wants to gain access to your account may have this information, like your name or email. The organisation needs to further verify your identity with some information that is not known to public or anyone close to you.",
   },
 
   {
@@ -203,6 +212,7 @@ const data = [
         correct: true,
       },
     ],
+    hint:"Authentication works as the second layer after identification. Authentication can help prevent fraud, identity theft, and other types of cyber-attacks that can result in financial losses, reputational damage, or even legal liability. It also helps protect the privacy and security of individuals' personal information, which is essential for building trust and maintaining customer loyalty",
   },
 ];
 

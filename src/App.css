@@ -12,10 +12,19 @@
   display: flex;
   flex-direction: column;
   background: url("./videos/cover.png");
-  height: 79vh;
+  height: 76vh;
   background-size: 100%;
 }
-
+.hint-btn {
+  background-color: #33d40f;
+  position: relative;
+  margin: auto;
+  padding: 1px;
+  max-width: 400px;
+  align-content: center;
+  margin-top: 60px;
+  z-index: 1;
+}
 .quiz {
   height: 100%;
   display: flex;
@@ -38,10 +47,10 @@
   width: 80%;
   background: linear-gradient(#100241, black);
   text-align: center;
-  padding: 20px;
+  padding: 2px;
   border-radius: 10px;
   border: 2px solid white;
-  font-size: 20px;
+  font-size: 10px;
 }
 
 .answers {

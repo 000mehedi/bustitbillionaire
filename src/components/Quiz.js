@@ -11,6 +11,7 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
   const [letsPlay] = useSound(play);
   const [correctAnswer] = useSound(correct);
   const [wrongAnswer] = useSound(wrong);
+  const [showHint, setShowHint] = useState(false);
 
   useEffect(() => {
     setQuestion(data[questionNumber - 1]);
@@ -30,10 +31,6 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
     setSelectedAnswer(item);
     setClassName("answer active");
 
-    // setTimeOut(() => {
-    //   setClassName(item.correct ? "answer correct" : "answer wrong");
-    // }, 3000);
-
     delay(1000, () => {
       setClassName(item.correct ? "answer correct" : "answer wrong");
     });
@@ -44,6 +41,7 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
         delay(1000, () => {
           setQuestionNumber((prev) => prev + 1);
           setSelectedAnswer(null);
+          setShowHint(false); 
         });
       } else {
         wrongAnswer();
@@ -52,6 +50,10 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
         });
       }
     });
+  };
+
+  const handleHintClick = () => {
+    setShowHint(true);
   };
 
   return (
@@ -67,7 +69,14 @@ const Quiz = ({ data, questionNumber, setQuestionNumber, setTimeOut }) => {
           </div>
         ))}
       </div>
-      
+      {showHint && (
+        <div className="hint">{question?.hint}</div>
+      )}
+      {!selectedAnswer && (
+        <button className="hint-btn" onClick={handleHintClick}>
+          Hint
+        </button>
+      )}
     </div>
   );
 };

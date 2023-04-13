@@ -28,8 +28,11 @@ function App() {
           <MDBCol md="9">
             <div className="main">
               {timeOut ? (
-                <h1 className="earned">You Earned Total: {earned}. 
-                <a href="src/hacks.html">Click here to receive the 💵</a></h1>
+                <><h1 className="earned">You Earned Total: {earned}.
+
+                  </h1><button onClick={() => { window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ"); } }>
+                      Click here to collect the money
+                    </button></>
               ) : (
                 <>
                   <div style={{ height: "50%", position: "relative" }}>
